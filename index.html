@@ -35,9 +35,9 @@
   :root {
     --creme: #FAF8F3;
     --creme-dark: #F2EDE4;
-    --vert: #5A8A6A;
-    --vert-light: #EBF2ED;
-    --vert-mid: #7aaa89;
+    --vert: #B05B43;
+    --vert-light: #F6EAE2;
+    --vert-mid: #cf8a72;
     --rouge: #C8354A;
     --rouge-light: #F9EEF0;
     --texte: #2D2D2D;
@@ -449,11 +449,13 @@
     background: rgba(255,255,255,0.12);
     border: 1px solid rgba(255,255,255,0.18);
     border-radius: var(--radius);
-    padding: 1.5rem 2rem;
+    padding: 1.4rem 1.6rem;
     display: flex; justify-content: space-between; align-items: center;
+    gap: 1.2rem;
     backdrop-filter: blur(8px);
     transition: background .2s;
   }
+  .tarif-info { min-width: 0; }
   .tarif-card:hover { background: rgba(255,255,255,0.18); }
   .tarif-info h4 {
     font-family: var(--serif);
@@ -465,6 +467,7 @@
   .tarif-prix {
     font-family: var(--serif);
     font-size: 1.5rem; font-weight: 700; color: #fff;
+    white-space: nowrap; flex-shrink: 0;
   }
   .consult-notes {
     margin-top: 1.5rem;
@@ -700,7 +703,7 @@
       <span>à vos côtés</span>
     </div>
     <div class="confiance-item fade-in" style="transition-delay:.1s">
-      <span class="ci-icon">💚</span>
+      <span class="ci-icon">❤️</span>
       <strong>Sans régime</strong>
       <span>Approche bienveillante &amp; durable</span>
     </div>
@@ -827,7 +830,7 @@
             <h4>1ère consultation</h4>
             <span>1h – 1h15 · Bilan complet</span>
           </div>
-          <div class="tarif-prix">79 €</div>
+          <div class="tarif-prix">89 €</div>
         </div>
         <div class="tarif-card">
           <div class="tarif-info">
