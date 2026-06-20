@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flora Massanella-Monteiro — Diététicienne-Nutritionniste à Crespières (78)</title>
+<meta name="description" content="Flora Massanella-Monteiro, diététicienne-nutritionniste depuis près de 20 ans à Crespières (Yvelines, 78). Approche humaniste, sans régime restrictif. Consultations en cabinet et en visio via Doctolib.">
+<meta name="keywords" content="diététicienne Crespières, nutritionniste Yvelines, diététicienne 78, nutrition humaniste, Flora Massanella, diététicienne Crespières Yvelines">
+<link rel="canonical" href="https://www.cabinetmassanella.fr/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Dietitian", "LocalBusiness"],
+  "name": "Flora Massanella-Monteiro",
+  "description": "Diététicienne-Nutritionniste depuis près de 20 ans, approche humaniste sans régime restrictif",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4 Rue Armand de Crux",
+    "addressLocality": "Crespières",
+    "postalCode": "78121",
+    "addressRegion": "Yvelines",
+    "addressCountry": "FR"
+  },
+  "telephone": "+33678799712",
+  "email": "fmassanella.dieteticienne@gmail.com",
+  "url": "https://www.cabinetmassanella.fr/",
+  "areaServed": ["Crespières", "Yvelines", "Île-de-France"]
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --creme: #FAF8F3;
+    --creme-dark: #F2EDE4;
+    --vert: #5A8A6A;
+    --vert-light: #EBF2ED;
+    --vert-mid: #7aaa89;
+    --rouge: #C8354A;
+    --rouge-light: #F9EEF0;
+    --texte: #2D2D2D;
+    --texte-light: #6B6B6B;
+    --blanc: #FFFFFF;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --radius: 20px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--creme);
+    color: var(--texte);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(250,248,243,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(90,138,106,0.12);
+    padding: 0 5%;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+  }
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    color: var(--texte);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+  .nav-logo span { color: var(--rouge); }
+  .nav-links {
+    display: flex; gap: 2rem; list-style: none;
+  }
+  .nav-links a {
+    font-size: 0.85rem; font-weight: 500; letter-spacing: 0.02em;
+    color: var(--texte-light); text-decoration: none;
+    transition: color .2s;
+  }
+  .nav-links a:hover { color: var(--rouge); }
+  .btn-doctolib {
+    background: var(--rouge);
+    color: #fff !important;
+    padding: 0.55rem 1.3rem;
+    border-radius: 40px;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.03em;
+    transition: background .2s, transform .15s !important;
+  }
+  .btn-doctolib:hover { background: #a8293d !important; transform: translateY(-1px); }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; }
+  .nav-toggle span {
+    display: block; width: 22px; height: 2px;
+    background: var(--texte); margin: 5px 0;
+    transition: .3s;
+  }
+
+  /* ── FORMES MIRÓ ── */
+  .miro { position: absolute; pointer-events: none; }
+
+  /* ── SECTIONS ── */
+  section { position: relative; overflow: hidden; }
+  .container { max-width: 1140px; margin: 0 auto; padding: 0 5%; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    padding-top: 68px;
+    background: var(--creme);
+  }
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 6rem 5% 4rem;
+  }
+  .hero-text .eyebrow {
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--vert);
+    margin-bottom: 1.2rem;
+    display: flex; align-items: center; gap: 0.6rem;
+  }
+  .hero-text .eyebrow::before {
+    content: ''; display: inline-block;
+    width: 28px; height: 2px; background: var(--vert);
+  }
+  .hero-text h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 700;
+    line-height: 1.18;
+    color: var(--texte);
+    margin-bottom: 1.4rem;
+  }
+  .hero-text h1 em {
+    font-style: italic; color: var(--rouge);
+  }
+  .hero-text .subtitle {
+    font-size: 1.05rem; color: var(--texte-light);
+    font-weight: 300; line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 2.2rem;
+  }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    background: var(--rouge); color: #fff;
+    padding: 0.9rem 2rem; border-radius: 50px;
+    font-weight: 600; font-size: 0.95rem;
+    text-decoration: none; letter-spacing: 0.02em;
+    transition: background .2s, transform .15s, box-shadow .2s;
+    box-shadow: 0 4px 18px rgba(200,53,74,0.3);
+  }
+  .btn-primary:hover { background: #a8293d; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,53,74,0.35); }
+  .btn-primary svg { width: 18px; height: 18px; }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    border: 2px solid var(--vert); color: var(--vert);
+    padding: 0.85rem 1.8rem; border-radius: 50px;
+    font-weight: 500; font-size: 0.9rem;
+    text-decoration: none; transition: all .2s;
+    margin-left: 1rem;
+  }
+  .btn-secondary:hover { background: var(--vert); color: #fff; }
+
+  /* Portrait */
+  .hero-visual {
+    position: relative; display: flex; justify-content: center; align-items: center;
+  }
+  .portrait-wrap {
+    position: relative; width: 420px; max-width: 100%;
+  }
+  .portrait-bg {
+    position: absolute; inset: -20px -20px -20px -20px;
+    background: var(--vert-light);
+    border-radius: 60% 40% 50% 45% / 45% 50% 55% 50%;
+    z-index: 0;
+  }
+  .portrait-img {
+    position: relative; z-index: 1;
+    width: 100%; height: 480px;
+    border-radius: 50% 50% 46% 50% / 44% 44% 50% 50%;
+    background: linear-gradient(160deg, #c8d9c8 0%, #a3c4a3 40%, #8fb58f 100%);
+    overflow: hidden;
+    display: flex; align-items: flex-end; justify-content: center;
+    box-shadow: 0 20px 60px rgba(90,138,106,0.25);
+  }
+  .portrait-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+  .portrait-badge {
+    position: absolute; bottom: 20px; right: -10px; z-index: 2;
+    background: #fff; border-radius: 16px;
+    padding: 0.8rem 1.2rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    font-size: 0.8rem; font-weight: 600; color: var(--texte);
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .portrait-badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--vert); }
+
+  /* Miró hero */
+  .miro-blob-1 {
+    top: 15%; left: -30px;
+    width: 120px; height: 90px;
+    background: var(--vert);
+    opacity: 0.07;
+    border-radius: 60% 40% 70% 30% / 40% 60% 40% 60%;
+  }
+  .miro-ring-1 {
+    top: 60%; left: 8%;
+    width: 40px; height: 40px;
+    border: 3px solid var(--rouge);
+    opacity: 0.15;
+    border-radius: 50%;
+  }
+  .miro-dot-1 {
+    bottom: 25%; right: 5%;
+    width: 14px; height: 14px;
+    background: var(--rouge);
+    opacity: 0.2;
+    border-radius: 50%;
+  }
+  .miro-star {
+    top: 25%; right: 8%;
+    font-size: 1.5rem; opacity: 0.1; color: var(--vert);
+    transform: rotate(15deg);
+  }
+
+  /* ── BANDEAU CONFIANCE ── */
+  #confiance {
+    background: var(--vert);
+    padding: 2.5rem 5%;
+  }
+  .confiance-grid {
+    max-width: 1140px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .confiance-item {
+    text-align: center; color: #fff;
+    padding: 1rem;
+  }
+  .confiance-item .ci-icon {
+    font-size: 1.8rem; margin-bottom: 0.5rem; display: block;
+  }
+  .confiance-item strong {
+    display: block; font-size: 1rem; font-weight: 600; margin-bottom: 0.2rem;
+  }
+  .confiance-item span {
+    font-size: 0.8rem; opacity: 0.85; font-weight: 300;
+  }
+
+  /* ── HISTOIRE ── */
+  #histoire {
+    padding: 7rem 5%;
+    background: var(--creme);
+  }
+  .histoire-inner {
+    max-width: 1140px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 5rem; align-items: center;
+  }
+  .histoire-visual {
+    position: relative;
+  }
+  .histoire-card {
+    background: var(--vert-light);
+    border-radius: var(--radius);
+    padding: 2.5rem;
+    position: relative; overflow: hidden;
+  }
+  .histoire-card::before {
+    content: '"';
+    font-family: var(--serif);
+    font-size: 10rem; line-height: 0.7;
+    color: var(--vert); opacity: 0.12;
+    position: absolute; top: 20px; left: 20px;
+  }
+  .histoire-card p {
+    font-family: var(--serif);
+    font-size: 1.05rem; font-style: italic;
+    color: var(--texte); line-height: 1.8; position: relative; z-index: 1;
+  }
+  .histoire-card .signature {
+    margin-top: 1.2rem; font-style: normal;
+    font-size: 0.85rem; font-weight: 600;
+    color: var(--vert); letter-spacing: 0.05em;
+  }
+  .section-label {
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--rouge);
+    margin-bottom: 0.8rem; display: block;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 700; line-height: 1.25;
+    color: var(--texte); margin-bottom: 1.5rem;
+  }
+  .section-body {
+    font-size: 1rem; color: var(--texte-light);
+    line-height: 1.85; margin-bottom: 1.2rem;
+  }
+
+  /* ── CITATION ── */
+  #citation {
+    padding: 6rem 5%;
+    background: var(--rouge);
+    position: relative; overflow: hidden;
+  }
+  .citation-inner {
+    max-width: 860px; margin: 0 auto; text-align: center;
+    position: relative; z-index: 1;
+  }
+  .citation-mark {
+    font-family: var(--serif);
+    font-size: 6rem; line-height: 0.5;
+    color: rgba(255,255,255,0.2);
+    display: block; margin-bottom: 1rem;
+  }
+  #citation blockquote {
+    font-family: var(--serif);
+    font-size: clamp(1.2rem, 2.2vw, 1.7rem);
+    font-style: italic;
+    color: #fff;
+    line-height: 1.65;
+    font-weight: 400;
+  }
+  #citation cite {
+    display: block; margin-top: 2rem;
+    font-size: 0.85rem; font-style: normal;
+    color: rgba(255,255,255,0.75); letter-spacing: 0.1em; font-weight: 500;
+  }
+  .miro-ring-cit {
+    position: absolute; top: 15%; right: 6%;
+    width: 80px; height: 80px;
+    border: 4px solid rgba(255,255,255,0.12);
+    border-radius: 50%;
+  }
+  .miro-blob-cit {
+    position: absolute; bottom: -20px; left: -20px;
+    width: 140px; height: 110px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 60% 40% 50% 60%;
+  }
+
+  /* ── SPÉCIALITÉS ── */
+  #specialites {
+    padding: 7rem 5%;
+    background: var(--creme-dark);
+  }
+  .section-header {
+    text-align: center; max-width: 600px; margin: 0 auto 4rem;
+  }
+  .specialites-grid {
+    max-width: 1140px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .spec-card {
+    background: var(--blanc);
+    border-radius: var(--radius);
+    padding: 2rem 1.8rem;
+    box-shadow: var(--shadow);
+    transition: transform .2s, box-shadow .2s;
+    border-top: 3px solid transparent;
+    position: relative; overflow: hidden;
+  }
+  .spec-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+    border-top-color: var(--rouge);
+  }
+  .spec-icon {
+    font-size: 2rem; margin-bottom: 1rem; display: block;
+  }
+  .spec-card h3 {
+    font-family: var(--serif);
+    font-size: 1.1rem; font-weight: 600;
+    color: var(--texte); margin-bottom: 0.6rem;
+  }
+  .spec-card p {
+    font-size: 0.88rem; color: var(--texte-light); line-height: 1.7;
+  }
+
+  /* ── LIVRE ── */
+  #livre {
+    padding: 7rem 5%;
+    background: var(--creme);
+  }
+  .livre-inner {
+    max-width: 1140px; margin: 0 auto;
+    display: grid; grid-template-columns: auto 1fr;
+    gap: 5rem; align-items: center;
+  }
+  .livre-cover {
+    width: 240px; flex-shrink: 0;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+  }
+  .livre-cover img { display: block; width: 100%; height: auto; }
+  .livre-content .section-body { margin-bottom: 1.5rem; }
+  .livre-meta {
+    background: var(--vert-light);
+    border-radius: 12px; padding: 1.2rem 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.88rem; color: var(--texte);
+    line-height: 1.7;
+  }
+  .livre-meta strong { color: var(--vert); }
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    border: 2px solid var(--texte); color: var(--texte);
+    padding: 0.75rem 1.8rem; border-radius: 50px;
+    font-size: 0.9rem; font-weight: 500;
+    text-decoration: none; transition: all .2s;
+  }
+  .btn-outline:hover { background: var(--texte); color: #fff; }
+
+  /* ── CONSULTATIONS ── */
+  #consultations {
+    padding: 7rem 5%;
+    background: var(--vert);
+  }
+  #consultations .section-title,
+  #consultations .section-body { color: #fff; }
+  #consultations .section-label { color: rgba(255,255,255,0.6); }
+  .consult-inner {
+    max-width: 1140px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4rem; align-items: start;
+  }
+  .tarifs-grid {
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .tarif-card {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    display: flex; justify-content: space-between; align-items: center;
+    backdrop-filter: blur(8px);
+    transition: background .2s;
+  }
+  .tarif-card:hover { background: rgba(255,255,255,0.18); }
+  .tarif-info h4 {
+    font-family: var(--serif);
+    font-size: 1.05rem; color: #fff; font-weight: 600; margin-bottom: 0.25rem;
+  }
+  .tarif-info span {
+    font-size: 0.8rem; color: rgba(255,255,255,0.7);
+  }
+  .tarif-prix {
+    font-family: var(--serif);
+    font-size: 1.5rem; font-weight: 700; color: #fff;
+  }
+  .consult-notes {
+    margin-top: 1.5rem;
+    font-size: 0.83rem; color: rgba(255,255,255,0.65); line-height: 1.7;
+  }
+  .consult-right {
+    color: #fff;
+  }
+  .consult-feature {
+    display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start;
+  }
+  .consult-feature .cf-icon {
+    font-size: 1.5rem; flex-shrink: 0; margin-top: 2px;
+  }
+  .consult-feature h4 {
+    font-family: var(--serif); font-size: 1rem; font-weight: 600;
+    color: #fff; margin-bottom: 0.25rem;
+  }
+  .consult-feature p {
+    font-size: 0.87rem; color: rgba(255,255,255,0.75); line-height: 1.6;
+  }
+  .btn-doctolib-lg {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    background: #fff; color: var(--vert);
+    padding: 0.9rem 2.2rem; border-radius: 50px;
+    font-weight: 700; font-size: 0.95rem;
+    text-decoration: none; margin-top: 2rem;
+    transition: transform .15s, box-shadow .2s;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  }
+  .btn-doctolib-lg:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.2); }
+
+  /* ── BLOG ── */
+  #blog {
+    padding: 7rem 5%;
+    background: var(--creme-dark);
+  }
+  .blog-grid {
+    max-width: 1140px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .blog-card {
+    background: var(--blanc);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform .2s, box-shadow .2s;
+    text-decoration: none; color: inherit;
+    display: block;
+  }
+  .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,0.12); }
+  .blog-thumb {
+    height: 180px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 3.5rem;
+    position: relative; overflow: hidden;
+  }
+  .blog-thumb-1 { background: linear-gradient(135deg, #e8f0e8, #c8d9c8); }
+  .blog-thumb-2 { background: linear-gradient(135deg, #f5e6d3, #e8c9a0); }
+  .blog-thumb-3 { background: linear-gradient(135deg, #fde8e8, #f5c4c4); }
+  .blog-thumb-4 { background: linear-gradient(135deg, #e8eef5, #c4d4e8); }
+  .blog-body { padding: 1.5rem 1.8rem 2rem; }
+  .blog-cat {
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--rouge);
+    margin-bottom: 0.5rem; display: block;
+  }
+  .blog-card h3 {
+    font-family: var(--serif); font-size: 1.05rem; font-weight: 600;
+    line-height: 1.4; color: var(--texte); margin-bottom: 0.6rem;
+  }
+  .blog-card p {
+    font-size: 0.85rem; color: var(--texte-light); line-height: 1.65;
+  }
+
+  /* ── CONTACT ── */
+  #contact {
+    padding: 7rem 5%;
+    background: var(--creme);
+  }
+  .contact-inner {
+    max-width: 1140px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4rem; align-items: start;
+  }
+  .contact-info-item {
+    display: flex; gap: 1rem; margin-bottom: 1.8rem; align-items: flex-start;
+  }
+  .contact-info-item .ci-icon2 {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: var(--vert-light);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; flex-shrink: 0;
+  }
+  .contact-info-item div h4 {
+    font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--vert);
+    margin-bottom: 0.2rem;
+  }
+  .contact-info-item div p, .contact-info-item div a {
+    font-size: 0.93rem; color: var(--texte);
+    text-decoration: none; line-height: 1.55;
+  }
+  .contact-info-item div a:hover { color: var(--rouge); }
+  .contact-map {
+    background: var(--vert-light);
+    border-radius: var(--radius);
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+  }
+  .contact-map iframe {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    border: none;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--texte);
+    color: rgba(255,255,255,0.7);
+    padding: 3rem 5%;
+    text-align: center;
+  }
+  footer .footer-logo {
+    font-family: var(--serif); font-size: 1.2rem; color: #fff;
+    margin-bottom: 1rem; display: block;
+  }
+  footer .footer-logo span { color: var(--rouge); }
+  footer p { font-size: 0.82rem; line-height: 1.7; }
+  footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
+  footer a:hover { color: #fff; }
+
+  /* ── ANIMATIONS ── */
+  .fade-in {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-in.visible { opacity: 1; transform: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex; flex-direction: column;
+      position: fixed; top: 68px; left: 0; right: 0;
+      background: var(--creme);
+      padding: 1.5rem 5%;
+      border-bottom: 1px solid var(--creme-dark);
+      gap: 1rem; z-index: 99;
+    }
+    .nav-toggle { display: block; }
+    .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 4rem; }
+    .hero-visual { order: -1; }
+    .portrait-wrap { width: 280px; }
+    .portrait-img { height: 320px; }
+    .histoire-inner, .livre-inner, .consult-inner, .contact-inner {
+      grid-template-columns: 1fr; gap: 2.5rem;
+    }
+    .specialites-grid { grid-template-columns: 1fr 1fr; }
+    .blog-grid { grid-template-columns: 1fr; }
+    .confiance-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .livre-inner { text-align: center; }
+    .livre-cover { margin: 0 auto; }
+  }
+  @media (max-width: 600px) {
+    .specialites-grid, .confiance-grid { grid-template-columns: 1fr; }
+    .hero-text .btn-secondary { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Flora <span>Massanella</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#histoire">Mon histoire</a></li>
+    <li><a href="#specialites">Spécialités</a></li>
+    <li><a href="#livre">Le Livre</a></li>
+    <li><a href="#consultations">Consultations</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://www.doctolib.fr/dieteticien/crespieres/flora-massanella" target="_blank" rel="noopener" class="btn-doctolib">Prendre RDV</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="miro blob miro-blob-1"></div>
+  <div class="miro ring miro-ring-1"></div>
+  <div class="miro dot miro-dot-1"></div>
+  <div class="miro miro-star">✦</div>
+
+  <div class="hero-inner">
+    <div class="hero-text fade-in">
+      <p class="eyebrow">Diététicienne-Nutritionniste · Crespières, 78</p>
+      <h1>Retrouver une relation <em>sereine</em> avec l'alimentation</h1>
+      <p class="subtitle">Depuis près de 20 ans, j'accompagne chaque personne avec une approche humaniste — sans régime restrictif, sans jugement. Parce que bien manger, c'est avant tout se respecter.</p>
+      <div>
+        <a href="https://www.doctolib.fr/dieteticien/crespieres/flora-massanella" target="_blank" rel="noopener" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Prendre rendez-vous sur Doctolib
+        </a>
+        <a href="#histoire" class="btn-secondary">En savoir plus</a>
+      </div>
+    </div>
+
+    <div class="hero-visual fade-in" style="transition-delay:.2s">
+      <div class="portrait-wrap">
+        <div class="portrait-bg"></div>
+        <div class="portrait-img">
+          <img src="images/flora-portrait.jpg" alt="Flora Massanella-Monteiro, diététicienne-nutritionniste à Crespières">
+        </div>
+        <div class="portrait-badge">
+          <span class="dot"></span>
+          Disponible en cabinet &amp; visio
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANDEAU CONFIANCE -->
+<section id="confiance">
+  <div class="confiance-grid">
+    <div class="confiance-item fade-in">
+      <span class="ci-icon">🌿</span>
+      <strong>Près de 20 ans</strong>
+      <span>à vos côtés</span>
+    </div>
+    <div class="confiance-item fade-in" style="transition-delay:.1s">
+      <span class="ci-icon">💚</span>
+      <strong>Sans régime</strong>
+      <span>Approche bienveillante &amp; durable</span>
+    </div>
+    <div class="confiance-item fade-in" style="transition-delay:.2s">
+      <span class="ci-icon">📖</span>
+      <strong>Autrice</strong>
+      <span>Ouvrage de référence publié</span>
+    </div>
+    <div class="confiance-item fade-in" style="transition-delay:.3s">
+      <span class="ci-icon">📍</span>
+      <strong>Crespières</strong>
+      <span>Cabinet &amp; téléconsultation</span>
+    </div>
+  </div>
+</section>
+
+<!-- HISTOIRE / VOCATION -->
+<section id="histoire">
+  <div class="histoire-inner">
+    <div class="histoire-visual fade-in">
+      <div class="histoire-card">
+        <p>Si j'exerce ce métier avec autant de passion, c'est aussi par expérience : je sais combien la relation à l'alimentation peut être complexe, et combien elle touche à l'estime de soi.</p>
+        <p style="margin-top:1rem">C'est cette compréhension du dedans que j'apporte à chaque consultation. Sans jugement. Avec écoute.</p>
+        <div class="signature">— Flora Massanella-Monteiro</div>
+      </div>
+      <div class="miro" style="position:absolute;bottom:-15px;right:-15px;width:60px;height:60px;border:3px solid var(--rouge);border-radius:50%;opacity:0.15"></div>
+      <div class="miro" style="position:absolute;top:-10px;left:30px;width:18px;height:18px;background:var(--vert);border-radius:50%;opacity:0.2"></div>
+    </div>
+
+    <div class="fade-in" style="transition-delay:.15s">
+      <span class="section-label">Ma vocation</span>
+      <h2 class="section-title">Un chemin<br>vers la bienveillance</h2>
+      <p class="section-body">Je suis Flora Massanella-Monteiro, diététicienne-nutritionniste depuis près de vingt ans, installée au sein de la Maison de Santé Pluridisciplinaire de Crespières, dans les Yvelines.</p>
+      <p class="section-body">Mon approche part d'un principe simple : vous n'êtes pas une pathologie. Vous êtes une personne, avec une histoire, des habitudes, des plaisirs. Mon rôle est de vous accompagner vers une alimentation qui vous ressemble — équilibrée, savoureuse, et durablement maintenue.</p>
+      <p class="section-body">Je travaille avec des enfants, des adultes, des sportifs, des personnes âgées. Chaque parcours est unique. Chaque consultation repart de zéro, à votre rythme.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CITATION -->
+<section id="citation">
+  <div class="miro-ring-cit miro"></div>
+  <div class="miro-blob-cit miro"></div>
+  <div class="citation-inner fade-in">
+    <span class="citation-mark">"</span>
+    <blockquote>Dévouée à ma profession, passionnée par toutes les rencontres humaines que m'offre mon métier, je pratique ma profession avec une vision humaniste qui vise à considérer l'être humain dans sa globalité et non dans la stricte définition de sa pathologie.</blockquote>
+    <cite>Flora Massanella-Monteiro — Diététicienne-Nutritionniste</cite>
+  </div>
+</section>
+
+<!-- SPÉCIALITÉS -->
+<section id="specialites">
+  <div class="section-header fade-in">
+    <span class="section-label">Domaines d'expertise</span>
+    <h2 class="section-title">Des spécialités pour chaque parcours de vie</h2>
+    <p style="color:var(--texte-light);font-size:.95rem">De l'enfant à l'âge de sagesse, je vous accompagne à toutes les étapes.</p>
+  </div>
+  <div class="specialites-grid">
+    <div class="spec-card fade-in">
+      <span class="spec-icon">⚖️</span>
+      <h3>Gestion du poids</h3>
+      <p>Retrouver un poids de forme durable, sans privation ni frustration. Une approche progressive, respectueuse de votre corps.</p>
+    </div>
+    <div class="spec-card fade-in" style="transition-delay:.08s">
+      <span class="spec-icon">🌿</span>
+      <h3>Troubles digestifs</h3>
+      <p>Reflux gastrique, côlon irritable, intolérances alimentaires. Un accompagnement précis pour retrouver le confort au quotidien.</p>
+    </div>
+    <div class="spec-card fade-in" style="transition-delay:.16s">
+      <span class="spec-icon">🩺</span>
+      <h3>Nutrition clinique</h3>
+      <p>Pathologies rénales, cardio-vasculaires, métaboliques (diabète, cholestérol). En lien avec votre équipe médicale.</p>
+    </div>
+    <div class="spec-card fade-in" style="transition-delay:.24s">
+      <span class="spec-icon">🔬</span>
+      <h3>Micro-nutrition</h3>
+      <p>Compréhension fine des nutriments essentiels. Fatigue chronique, déficiences, optimisation du bien-être cellulaire.</p>
+    </div>
+    <div class="spec-card fade-in" style="transition-delay:.32s">
+      <span class="spec-icon">🧠</span>
+      <h3>Psycho-nutrition</h3>
+      <p>Le lien entre émotions et alimentation. Comprendre ses comportements alimentaires pour les transformer en douceur.</p>
+    </div>
+    <div class="spec-card fade-in" style="transition-delay:.40s">
+      <span class="spec-icon">🏃</span>
+      <h3>Nutrition &amp; sport</h3>
+      <p>Alimentation adaptée à la pratique sportive — amateur ou compétiteur. Performance, récupération, composition corporelle.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LE LIVRE -->
+<section id="livre">
+  <div class="livre-inner">
+    <div class="fade-in">
+      <div class="livre-cover">
+        <img src="images/livre.jpg" alt="Livre « Alimentations, recettes et pratiques culinaires » — Flora Massanella & Sophie Ferreira">
+      </div>
+    </div>
+    <div class="fade-in" style="transition-delay:.15s">
+      <span class="section-label">Ouvrage de référence</span>
+      <h2 class="section-title">Le Livre</h2>
+      <p class="section-body">Co-écrit avec Sophie Ferreira, cet ouvrage pédagogique et pratique est devenu une référence pour les professionnels de santé et les personnes souhaitant approfondir leur compréhension de la nutrition.</p>
+      <p class="section-body">Des bases scientifiques accessibles, des recettes équilibrées et des pratiques culinaires concrètes — un livre conçu pour être utilisé au quotidien.</p>
+      <div class="livre-meta">
+        <strong>Alimentations, recettes et pratiques culinaires</strong><br>
+        Flora Massanella-Monteiro &amp; Sophie Ferreira<br>
+        Collection Diététique &amp; Nutrition · Studyrama / EDNH · 2<sup>e</sup> édition
+      </div>
+      <a href="https://www.livres-medicaux.com/alimentations-recettes-et-pratiques-culinaires-2eme-edition.html" target="_blank" rel="noopener" class="btn-primary" style="margin-right:1rem">Commander le livre →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTATIONS -->
+<section id="consultations">
+  <div class="consult-inner">
+    <div class="fade-in">
+      <span class="section-label" style="color:rgba(255,255,255,0.6)">Tarifs &amp; modalités</span>
+      <h2 class="section-title" style="color:#fff">Consultations</h2>
+      <div class="tarifs-grid">
+        <div class="tarif-card">
+          <div class="tarif-info">
+            <h4>1ère consultation</h4>
+            <span>1h – 1h15 · Bilan complet</span>
+          </div>
+          <div class="tarif-prix">79 €</div>
+        </div>
+        <div class="tarif-card">
+          <div class="tarif-info">
+            <h4>Consultation de suivi</h4>
+            <span>40 min</span>
+          </div>
+          <div class="tarif-prix">56 €</div>
+        </div>
+        <div class="tarif-card">
+          <div class="tarif-info">
+            <h4>Troubles du comportement alimentaire</h4>
+            <span>50 min</span>
+          </div>
+          <div class="tarif-prix">63 €</div>
+        </div>
+      </div>
+      <div class="consult-notes">
+        * Consultations non remboursées par la Sécurité sociale. Certaines mutuelles peuvent prendre en charge tout ou partie des frais — renseignez-vous auprès de la vôtre.
+      </div>
+    </div>
+
+    <div class="consult-right fade-in" style="transition-delay:.15s">
+      <div class="consult-feature">
+        <span class="cf-icon">🏥</span>
+        <div>
+          <h4>En cabinet</h4>
+          <p>Maison de Santé Pluridisciplinaire de Crespières, dans un cadre chaleureux et confidentiel.</p>
+        </div>
+      </div>
+      <div class="consult-feature">
+        <span class="cf-icon">💻</span>
+        <div>
+          <h4>En visioconférence</h4>
+          <p>Consultez depuis chez vous, avec la même qualité d'écoute et de suivi. Via Doctolib.</p>
+        </div>
+      </div>
+      <div class="consult-feature">
+        <span class="cf-icon">💬</span>
+        <div>
+          <h4>Joignable entre les rendez-vous</h4>
+          <p>« Vous n'êtes jamais seul·e — je suis toujours disponible pour répondre à vos questions entre les séances. »</p>
+        </div>
+      </div>
+      <a href="https://www.doctolib.fr/dieteticien/crespieres/flora-massanella" target="_blank" rel="noopener" class="btn-doctolib-lg">
+        📅 Prendre rendez-vous sur Doctolib
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div style="max-width:1140px;margin:0 auto">
+    <div class="section-header fade-in">
+      <span class="section-label">Ressources &amp; conseils</span>
+      <h2 class="section-title">Le Blog</h2>
+      <p style="color:var(--texte-light);font-size:.95rem">Articles pratiques, recettes équilibrées et réponses aux grandes questions nutritionnelles.</p>
+    </div>
+    <div class="blog-grid">
+      <a href="#" class="blog-card fade-in">
+        <div class="blog-thumb blog-thumb-1">🥗</div>
+        <div class="blog-body">
+          <span class="blog-cat">Question santé</span>
+          <h3>Obésité : la moitié des hommes français obèses ou en surpoids</h3>
+          <p>Un état des lieux des chiffres actuels et les clés pour comprendre ce problème de santé publique.</p>
+        </div>
+      </a>
+      <a href="#" class="blog-card fade-in" style="transition-delay:.1s">
+        <div class="blog-thumb blog-thumb-2">🍅</div>
+        <div class="blog-body">
+          <span class="blog-cat">Recettes</span>
+          <h3>Bruschetta gourmande et équilibrée : la recette express pour manger sain</h3>
+          <p>Une entrée savoureuse, rapide à préparer et nutritionnellement équilibrée pour toute la famille.</p>
+        </div>
+      </a>
+      <a href="#" class="blog-card fade-in" style="transition-delay:.15s">
+        <div class="blog-thumb blog-thumb-3">🥖</div>
+        <div class="blog-body">
+          <span class="blog-cat">Recettes</span>
+          <h3>Comment faire ses croûtons maison</h3>
+          <p>Zéro gaspillage, tout le goût. La méthode simple pour des croûtons croustillants et sains.</p>
+        </div>
+      </a>
+      <a href="#" class="blog-card fade-in" style="transition-delay:.2s">
+        <div class="blog-thumb blog-thumb-4">🩸</div>
+        <div class="blog-body">
+          <span class="blog-cat">Question santé</span>
+          <h3>Qu'est-ce que la carence en fer ?</h3>
+          <p>Symptômes, causes, aliments à privilégier. Tout ce qu'il faut savoir sur ce déficit très fréquent.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="fade-in">
+      <span class="section-label">Me retrouver</span>
+      <h2 class="section-title">Contact &amp; accès</h2>
+      <p class="section-body" style="margin-bottom:2.5rem">N'hésitez pas à me contacter pour toute question avant votre première consultation. Je vous réponds dans les meilleurs délais.</p>
+
+      <div class="contact-info-item">
+        <div class="ci-icon2">📍</div>
+        <div>
+          <h4>Cabinet</h4>
+          <p>Maison de Santé Pluridisciplinaire<br>4 Rue Armand de Crux<br>78121 Crespières (Yvelines)</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ci-icon2">📞</div>
+        <div>
+          <h4>Téléphone</h4>
+          <a href="tel:+33678799712">06 78 79 97 12</a>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ci-icon2">✉️</div>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:fmassanella.dieteticienne@gmail.com">fmassanella.dieteticienne@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ci-icon2">📅</div>
+        <div>
+          <h4>Rendez-vous</h4>
+          <a href="https://www.doctolib.fr/dieteticien/crespieres/flora-massanella" target="_blank" rel="noopener">Réserver sur Doctolib →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade-in" style="transition-delay:.15s">
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps?q=4%20Rue%20Armand%20de%20Crux,%2078121%20Cresp%C3%A8res&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Cabinet de Flora Massanella à Crespières"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Flora <span>Massanella</span>-Monteiro</span>
+  <p>Diététicienne-Nutritionniste · Maison de Santé Pluridisciplinaire · 4 Rue Armand de Crux, 78121 Crespières</p>
+  <p style="margin-top:.5rem">
+    <a href="tel:+33678799712">06 78 79 97 12</a> ·
+    <a href="mailto:fmassanella.dieteticienne@gmail.com">fmassanella.dieteticienne@gmail.com</a> ·
+    <a href="https://www.doctolib.fr/dieteticien/crespieres/flora-massanella" target="_blank" rel="noopener">Doctolib</a>
+  </p>
+  <p style="margin-top:1.2rem;opacity:.4;font-size:.75rem">© 2026 Flora Massanella-Monteiro · Mentions légales · Politique de confidentialité</p>
+</footer>
+
+<script>
+// Nav toggle mobile
+const toggle = document.getElementById('navToggle');
+const links = document.getElementById('navLinks');
+toggle.addEventListener('click', () => links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+// Scroll fade-in
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
