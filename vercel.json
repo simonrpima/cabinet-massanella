@@ -1,0 +1,50 @@
+{
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/post/taux-obésité-france-la-moitié-des-hommes-en-surpoids",
+      "destination": "/blog/regimes-amaigrissants-obesite.html",
+      "permanent": true
+    },
+    {
+      "source": "/post/taux-ob%C3%A9sit%C3%A9-france-la-moiti%C3%A9-des-hommes-en-surpoids",
+      "destination": "/blog/regimes-amaigrissants-obesite.html",
+      "permanent": true
+    },
+    {
+      "source": "/post/bruschetta-gourmande-et-équilibrée-la-recette-express-pour-manger-sain",
+      "destination": "/blog/bruschetta-equilibree.html",
+      "permanent": true
+    },
+    {
+      "source": "/post/bruschetta-gourmande-et-%C3%A9quilibr%C3%A9e-la-recette-express-pour-manger-sain",
+      "destination": "/blog/bruschetta-equilibree.html",
+      "permanent": true
+    },
+    {
+      "source": "/post/faire-ses-croutons-maison",
+      "destination": "/blog/croutons-maison.html",
+      "permanent": true
+    },
+    {
+      "source": "/post/qu-est-ce-que-la-carence-en-fer",
+      "destination": "/blog/carence-en-fer.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/#blog",
+      "permanent": true
+    },
+    {
+      "source": "/post/:slug*",
+      "destination": "/#blog",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

@@ -2,8 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.cabinetmassanella.fr/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-09-19</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.cabinetmassanella.fr/blog/regimes-amaigrissants-obesite.html</loc>
+    <lastmod>2026-09-19</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.cabinetmassanella.fr/blog/carence-en-fer.html</loc>
+    <lastmod>2026-09-19</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.cabinetmassanella.fr/blog/bruschetta-equilibree.html</loc>
+    <lastmod>2026-09-19</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.cabinetmassanella.fr/blog/croutons-maison.html</loc>
+    <lastmod>2026-09-19</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>
